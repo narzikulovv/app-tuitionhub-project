@@ -6,6 +6,8 @@ h1, h2, h3, h4, h5, h6, ul, p, a {
 
 body {
 
+  background-color: #F6F6F6;
+
   ///////////////////////// NAVBAR Components ////////////////
 
   .navbar_main {
@@ -229,6 +231,197 @@ body {
               height: 100%;
               position: absolute;
               top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  /////////////////////// PROGRAMS Componets ////////////////
+
+  .programs_main{
+    margin-top: 50px;
+    .con_programs{
+      .row_programs{
+        .col12_programs{
+          h1{
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.02em;
+            color: #000000;
+
+          }
+          margin-bottom: 50px;
+        }
+        .col6_programs{
+          .card_programs{
+            background: #FFFFFF;
+            box-shadow: 0px 2px 2px rgba(188, 188, 188, 0.25);
+            border-radius: 10px;
+            margin-bottom: 30px;
+            .card-header{
+              h1{
+                font-family: SF Pro Display;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 26px;
+                line-height: 34px;
+                letter-spacing: -0.02em;
+                color: #000000;
+                text-align: center;
+              }
+            }
+            .card-body{
+              h4{
+                font-family: SF Pro Display;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 40px;
+                color: #000000;
+                &:hover{
+                  color: #00D74A;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /////////////////////// Certificates Components //////////
+
+  .certificates_main{
+    .cer_con{
+      .cer_row{
+        .cer_col12{
+          h1{
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.02em;
+            color: #000000;
+            text-align: center;
+          }
+        }
+        .cer_col4{
+          margin-top: 30px;
+          .cer_card{
+            background: #FFFFFF;
+            box-shadow: 0px 2px 2px rgba(188, 188, 188, 0.25);
+            border-radius: 10px;
+
+            .card-header{
+              h1{
+                font-family: SF Pro Display;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 26px;
+                line-height: 34px;
+                letter-spacing: -0.02em;
+                color: #000000;
+                text-align: center;
+              }
+            }
+            .card-body{
+              p{
+                font-family: SF Pro Display;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 40px;
+                color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ////////////////////// NEWS Components ///////////////////
+
+  .news_main{
+    .news_con{
+      .news_row{
+        .news_col12{
+          h1{
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.02em;
+            color: #000000;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+          }
+        }
+        .news_col4{
+          margin-bottom: 20px;
+          .news_card{
+            .card-header{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img{
+                width: 50%;
+              }
+            }
+            .card-body{
+              h1{
+                font-family: SF Pro Display;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 26px;
+                line-height: 34px;
+                letter-spacing: -0.02em;
+                color: #000000;
+              }
+              h4{
+                font-family: SF Pro Display;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 35px;
+                color: #000000;
+                &:hover{
+                  color: #3942d7;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+        .news_more_col2{
+          button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            background-color: #00D74A;
+            color: #FFFFFF;
+            font-weight: 600;
+            padding: 10px 30px;
+            span{
+              margin-left: 5px;
+            }
+            &:hover{
+              span{
+                margin-left: 10px;
+                transition: all 0.2s linear;
+              }
             }
           }
         }
