@@ -20,6 +20,7 @@ const Programs = () => {
                                 <h4><span><GiCheckMark/></span> Lorem ipsum dolor sit amet.</h4>
                                 <h4><span><GiCheckMark/></span> Lorem ipsum dolor sit amet, consectetur.</h4>
                                 <h4><span><GiCheckMark/></span> Lorem</h4>
+                                <img src="./images/bg-card.png" alt=""/>
                             </div>
                         </div>
                     </div>
@@ -33,6 +34,7 @@ const Programs = () => {
                                 <h4><span><GiCheckMark/></span> Lorem ipsum dolor sit amet.</h4>
                                 <h4><span><GiCheckMark/></span> Lorem ipsum dolor sit amet, consectetur.</h4>
                                 <h4><span><GiCheckMark/></span> Lorem</h4>
+                                <img src="./images/bg-card.png" alt=""/>
                             </div>
                         </div>
                     </div>

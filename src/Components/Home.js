@@ -13,8 +13,8 @@ const Home = () => {
 
                         </div>
                         <div className="col-5 home_col_5">
-                            <img className="bg" src="./images/background.png" alt=""/>
-                            <img className="student" src="./images/student.png" alt=""/>
+                            {/*<img className="bg" src="./images/background.png" alt=""/>*/}
+                            {/*<img className="student" src="./images/student.png" alt=""/>*/}
                         </div>
                     </div>
                 </div>

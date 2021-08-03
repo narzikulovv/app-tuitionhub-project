@@ -2,18 +2,40 @@ h1, h2, h3, h4, h5, h6, ul, p, a {
   text-decoration: none;
   margin-bottom: 0;
   padding-bottom: 0;
+  font-family: "Montserrat";
+}
+
+////////////////////////// Scroll ////////////////////////////
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track{
+  background-color: #FFFFFF;
+}
+::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(45deg, rgb(87, 179, 255), rgb(245, 132, 255));
 }
 
 body {
 
-  background-color: #F6F6F6;
+  background: #EBEDEF;
 
   ///////////////////////// NAVBAR Components ////////////////
 
   .navbar_main {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background: #2D4DA6;
+    z-index: 999;
+
     .con_main {
       .navbar_main_child {
         .navbar_brend {
+          font-family: Roboto;
+          color: #FFFFFF;
+          font-size: 30px;
           img {
             width: 200px;
             height: 60px;
@@ -27,8 +49,9 @@ body {
             }
           }
         }
-        .wrap{
-          .select_two{
+
+        .wrap {
+          .select_two {
             @media (max-width: 2000px) {
               display: none;
             }
@@ -45,6 +68,7 @@ body {
 
           }
         }
+
         .burger {
           border: 0 !important;
           padding: 0 !important;
@@ -58,13 +82,16 @@ body {
           .nav_main {
 
             .navitem_main {
+              margin-left: 30px ;
               .navlink_main {
                 font-weight: 600;
                 font-size: 18px;
-                color: black;
-                &:hover{
+                color: #FFFFFF;
+
+                &:hover {
                   color: #72da26;
                 }
+
                 @media (max-width: 1200px) {
                   font-size: 16px;
                 }
@@ -73,7 +100,8 @@ body {
                 }
               }
             }
-            .register_two{
+
+            .register_two {
               @media (max-width: 2000px) {
                 display: none;
               }
@@ -86,10 +114,12 @@ body {
           .register_one {
             font-weight: 600;
             font-size: 18px;
-            color: black;
-            &:hover{
+            color: #FFFFFF;
+
+            &:hover {
               color: #72da26;
             }
+
             @media (max-width: 1200px) {
               font-size: 16px;
             }
@@ -137,9 +167,12 @@ body {
               }
             }
           }
+
           .select {
             margin-right: 20px;
-            width: 80px;
+            width: 50px;
+            height: 30px;
+            padding: 0;
             @media (max-width: 992px) {
               display: none;
             }
@@ -151,15 +184,24 @@ body {
 
   //////////////////////// HOME Components ///////////////////
 
-  .home_main{
-    background-color: #475463;
+  .home_main {
+    //background-color: #475463;
     width: 100%;
-    .home_con_fluid{
-      .home_con{
-        .home_row{
-          .home_col_7{
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-image: url("../images/background.png7.png");
+    height: calc(100vh + 200px);
+
+    .home_con_fluid {
+      .home_con {
+        .home_row {
+          .home_col_7 {
             padding-bottom: 20px;
-            h1{
+
+            h1 {
               margin-top: 88px;
               font-family: SF Pro Display;
               font-style: normal;
@@ -167,7 +209,8 @@ body {
               font-size: 48px;
               line-height: 62px;
               letter-spacing: -0.01em;
-              color: #FFFFFF;
+              color: #2D4DA6;
+              text-shadow: 1px 1px 1px white;
               @media (max-width: 1200px) {
                 font-size: 40px;
               }
@@ -185,7 +228,8 @@ body {
                 font-size: 20px;
               }
             }
-            .aqsh{
+
+            .aqsh {
               font-family: SF Pro Display;
               font-style: normal;
               font-weight: 800;
@@ -214,19 +258,22 @@ body {
               }
             }
           }
-          .home_col_5{
+
+          .home_col_5 {
             position: relative;
             height: 500px;
             @media (max-width: 992px) {
               display: none;
             }
-            .bg{
+
+            .bg {
               position: absolute;
               width: 100%;
               height: 100%
 
             }
-            .student{
+
+            .student {
               width: 90%;
               height: 100%;
               position: absolute;
@@ -241,31 +288,47 @@ body {
 
   /////////////////////// PROGRAMS Componets ////////////////
 
-  .programs_main{
-    margin-top: 50px;
-    .con_programs{
-      .row_programs{
-        .col12_programs{
-          h1{
+  .programs_main {
+    margin-top: -250px;
+    padding-top: 20px;
+    //padding-top: 50px;
+    //width: 100%;
+    //background-attachment: fixed;
+    //background-position: center;
+    //background-size: cover;
+    //background-repeat: no-repeat;
+    //
+    //background-image: url("../images/background1.jpg");
+    //height: 90vh;
+    background-color: #2D4DA6;
+
+    .con_programs {
+      .row_programs {
+        .col12_programs {
+          h1 {
             font-family: SF Pro Display;
             font-style: normal;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
             letter-spacing: -0.02em;
-            color: #000000;
+            color: #FFFFFF;
+            text-shadow: 1px 1px 1px black;
 
           }
+
           margin-bottom: 50px;
         }
-        .col6_programs{
-          .card_programs{
+
+        .col6_programs {
+          .card_programs {
             background: #FFFFFF;
             box-shadow: 0px 2px 2px rgba(188, 188, 188, 0.25);
             border-radius: 10px;
             margin-bottom: 30px;
-            .card-header{
-              h1{
+
+            .card-header {
+              h1 {
                 font-family: SF Pro Display;
                 font-style: normal;
                 font-weight: 600;
@@ -276,17 +339,25 @@ body {
                 text-align: center;
               }
             }
-            .card-body{
-              h4{
+
+            .card-body {
+              position: relative;
+              h4 {
                 font-family: SF Pro Display;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 18px;
                 line-height: 40px;
                 color: #000000;
-                &:hover{
+
+                &:hover {
                   color: #00D74A;
                 }
+              }
+              img{
+                position: absolute;
+                bottom: 0;
+                right: 0;
               }
             }
           }
@@ -297,30 +368,42 @@ body {
 
   /////////////////////// Certificates Components //////////
 
-  .certificates_main{
-    .cer_con{
-      .cer_row{
-        .cer_col12{
-          h1{
+  .certificates_main {
+    padding-top: 50px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-image: url("../images/background2.jpg");
+    height: 70vh;
+    .cer_con {
+      .cer_row {
+        .cer_col12 {
+          h1 {
             font-family: SF Pro Display;
             font-style: normal;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
             letter-spacing: -0.02em;
-            color: #000000;
+            color: #fff;
             text-align: center;
+            text-shadow: 1px 1px 1px black;
           }
         }
-        .cer_col4{
+
+        .cer_col4 {
           margin-top: 30px;
-          .cer_card{
+
+          .cer_card {
             background: #FFFFFF;
             box-shadow: 0px 2px 2px rgba(188, 188, 188, 0.25);
             border-radius: 10px;
 
-            .card-header{
-              h1{
+            .card-header {
+              h1 {
                 font-family: SF Pro Display;
                 font-style: normal;
                 font-weight: 600;
@@ -329,10 +412,12 @@ body {
                 letter-spacing: -0.02em;
                 color: #000000;
                 text-align: center;
+
               }
             }
-            .card-body{
-              p{
+
+            .card-body {
+              p {
                 font-family: SF Pro Display;
                 font-style: normal;
                 font-weight: normal;
@@ -349,36 +434,49 @@ body {
 
   ////////////////////// NEWS Components ///////////////////
 
-  .news_main{
-    .news_con{
-      .news_row{
-        .news_col12{
-          h1{
+  .news_main {
+    width: 100%;
+    //background-attachment: fixed;
+    //background-position: center;
+    //background-size: cover;
+    //background-repeat: no-repeat;
+    //
+    //background-image: url("../images/background3.jpg");
+    height: 750px;
+    .news_con {
+      .news_row {
+        .news_col12 {
+          h1 {
             font-family: SF Pro Display;
             font-style: normal;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
             letter-spacing: -0.02em;
-            color: #000000;
+            color: #fff;
             text-align: center;
             margin-top: 50px;
             margin-bottom: 50px;
+            text-shadow: 1px 1px 1px black;
           }
         }
-        .news_col4{
+
+        .news_col4 {
           margin-bottom: 20px;
-          .news_card{
-            .card-header{
+
+          .news_card {
+            .card-header {
               display: flex;
               align-items: center;
               justify-content: center;
-              img{
+
+              img {
                 width: 50%;
               }
             }
-            .card-body{
-              h1{
+
+            .card-body {
+              h1 {
                 font-family: SF Pro Display;
                 font-style: normal;
                 font-weight: 600;
@@ -387,14 +485,16 @@ body {
                 letter-spacing: -0.02em;
                 color: #000000;
               }
-              h4{
+
+              h4 {
                 font-family: SF Pro Display;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 18px;
                 line-height: 35px;
                 color: #000000;
-                &:hover{
+
+                &:hover {
                   color: #3942d7;
                   cursor: pointer;
                 }
@@ -402,8 +502,9 @@ body {
             }
           }
         }
-        .news_more_col2{
-          button{
+
+        .news_more_col2 {
+          button {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -414,16 +515,375 @@ body {
             color: #FFFFFF;
             font-weight: 600;
             padding: 10px 30px;
-            span{
+
+            span {
               margin-left: 5px;
             }
-            &:hover{
-              span{
+
+            &:hover {
+              span {
                 margin-left: 10px;
                 transition: all 0.2s linear;
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  ///////////////////// CONTACK Component //////////////////
+
+  .contak_main {
+    padding-top: 50px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-image: url("../images/background4.jpg");
+    height: 650px;
+    margin-bottom: 50px;
+
+    .contak_con {
+      .contak_row {
+
+        .con_aloqa_12 {
+          text-align: center;
+          margin-bottom: 50px;
+
+          h1 {
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.02em;
+            color: #fff;
+            text-shadow: 1px 1px 1px black;
+          }
+        }
+
+        .contak_left_col6 {
+          @media (max-width: 992px) {
+            margin-bottom: 50px;
+          }
+
+          .contak_card {
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+            background: #f4f4f4;
+            border-radius: 1rem;
+            text-align: center;
+
+
+            &:hover {
+              transition: box-shadow .2s ease;
+            }
+
+            .card-body {
+              margin-bottom: 70px;
+
+              h1 {
+                font-weight: 400;
+                font-size: 20px;
+                padding-bottom: 10px;
+                @media (max-width: 400px) {
+                  font-size: 16px;
+                }
+              }
+
+              h2 {
+                font-weight: 400;
+                color: #f58220;
+                font-size: 25px;
+                margin-bottom: 20px;
+                @media (max-width: 400px) {
+                  font-size: 20px;
+                }
+
+                span {
+                  font-size: 30px;
+                  font-weight: 700;
+                  color: #5c5858;
+                  margin-left: 10px;
+                  @media (max-width: 400px) {
+                    font-size: 25px;
+                  }
+
+                  &:hover {
+                    cursor: pointer;
+                  }
+                }
+              }
+
+              h3 {
+                font-weight: 400;
+                font-size: 20px;
+                @media (max-width: 400px) {
+                  font-size: 16px;
+                }
+              }
+
+              h5 {
+                a {
+                  font-weight: 400;
+                  font-size: 20px;
+                  padding-bottom: 10px;
+                  color: black;
+                  text-decoration: none;
+                  @media (max-width: 400px) {
+                    font-size: 16px;
+                  }
+                }
+
+                margin-bottom: 40px;
+              }
+
+              h4 {
+                font-weight: 400;
+                font-size: 20px;
+                margin-bottom: 30px;
+                @media (max-width: 400px) {
+                  font-size: 16px;
+                }
+              }
+
+              .line {
+                height: 1px;
+                width: 100%;
+                background-color: #CED4DA;
+                margin-bottom: 20px;
+                margin-top: 20px;
+              }
+
+              .lavozim {
+                h6 {
+                  font-weight: 400;
+                  font-size: 20px;
+                  @media (max-width: 400px) {
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .contak_right_col6 {
+
+          .card {
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+            background: #f4f4f4;
+            border-radius: 1rem;
+            padding: 25px;
+
+
+            h1 {
+              font-weight: 500;
+              color: #5c5858;
+              font-size: 25px;
+              margin-bottom: 30px;
+            }
+
+            input {
+              margin-bottom: 25px;
+            }
+
+            button {
+              background-color: #00D74A;
+              width: 50%;
+              margin-top: 30px;
+              color: #FFFFFF;
+              font-weight: 600;
+              margin-bottom: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //////////////////// FOOTER Component ///////////////////
+
+  .footer_main {
+    padding-top: 50px;
+    //width: 100%;
+    //background-attachment: fixed;
+    //background-position: center;
+    //background-size: cover;
+    //background-repeat: no-repeat;
+    //
+    //background-image: url("../images/background6.png");
+    //height: 350px;
+
+    .footer_con {
+
+      .footer_row {
+        .footer_col4_1 {
+          img {
+            width: 60%;
+          }
+
+          p {
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+            margin-top: 15px;
+            opacity: 0.8;
+            text-shadow: 1px 1px 1px black;
+          }
+        }
+
+        .footer_col3_2 {
+          margin-bottom: 30px;
+
+          h1 {
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            color: #fff;
+            text-shadow: 1px 1px 1px black;
+          }
+
+          ul {
+            li {
+              a {
+                font-family: SF Pro Display;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: #fff;
+                opacity: 0.8;
+                text-shadow: 1px 1px 1px black;
+
+                &:hover {
+                  color: #00D74A;
+                }
+
+                span {
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+        }
+
+        .footer_kontak {
+          h1 {
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            color: #fff;
+            text-shadow: 1px 1px 1px black;
+
+
+          }
+
+          ul {
+            li {
+              a {
+                font-family: SF Pro Display;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: #fff;
+                opacity: 0.8;
+                text-shadow: 1px 1px 1px black;
+
+                &:hover {
+                  color: #00D74A;
+                }
+
+                span {
+                  margin-right: 5px;
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /////////////////// ADMIN PASSWORD Pages Component ///////////////
+
+  .admin_password_main {
+
+    .admin_password_con {
+      .admin_password_row {
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+
+        .admin_col4 {
+          .admin_card {
+            padding: 30px 25px;
+            text-align: center;
+
+            form {
+              h1 {
+                font-weight: 600;
+                margin-bottom: 10px;
+                font-size: 30px;
+              }
+
+              p {
+                font-weight: 500;
+                margin-bottom: 50px;
+                font-size: 20px;
+              }
+
+              input {
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  ////////////////// ADMIN Pages Pages Component ///////////////////
+
+  .admin_layout {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    .admin_layout_left {
+      width: 250px;
+      height: 100%;
+      overflow-y: auto;
+      background-color: #FFFFFF;
+      padding: 30px 0;
+      .user_info {
+        padding: 10px 15px;
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #f2f4f8;
+        }
+        h5{
+          font-size: 16px;
+          font-weight: 600;
+        }
+        p{
+          font-size: 12px;
         }
       }
     }
