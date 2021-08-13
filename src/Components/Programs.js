@@ -12,7 +12,7 @@ const Programs = () => {
                     </div>
                     <div className="col-12 col-md-12 col-sm-12 col-lg-6 col6_programs">
                         <div className="card card_programs">
-                            <div className="card-header">
+                            <div className="card-header1">
                                 <h1>Our Mission</h1>
                             </div>
                             <div className="card-body">
@@ -20,21 +20,23 @@ const Programs = () => {
                                 <h4><span><GiCheckMark/></span> Lorem ipsum dolor sit amet.</h4>
                                 <h4><span><GiCheckMark/></span> Lorem ipsum dolor sit amet, consectetur.</h4>
                                 <h4><span><GiCheckMark/></span> Lorem</h4>
-                                <img src="./images/bg-card.png" alt=""/>
+
                             </div>
                         </div>
                     </div>
                     <div className="col-12 col-md-12 col-sm-12 col-lg-6 col6_programs">
                         <div className="card card_programs">
-                            <div className="card-header">
+
+                            <div className="card-header1">
                                 <h1>Our Vision</h1>
+                                
                             </div>
                             <div className="card-body">
                                 <h4><span><GiCheckMark/></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, placeat.</h4>
                                 <h4><span><GiCheckMark/></span> Lorem ipsum dolor sit amet.</h4>
                                 <h4><span><GiCheckMark/></span> Lorem ipsum dolor sit amet, consectetur.</h4>
                                 <h4><span><GiCheckMark/></span> Lorem</h4>
-                                <img src="./images/bg-card.png" alt=""/>
+
                             </div>
                         </div>
                     </div>

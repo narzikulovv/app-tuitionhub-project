@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="container footer_con">
                 <div className="footer_row row">
                     <div className="col-lg-4 col-md-12 col-sm-12 col-12 footer_col4_1 mb-3">
-                        <img src="./images/Logo2.png" alt=""/>
+                        <img src="./images/logo-new.png" alt=""/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, commodi deserunt distinctio
                             fugiat harum id ipsum, iusto libero odio officia pariatur perspiciatis suscipit, ullam.
                             Aliquid ex ipsam nihil provident quae?</p>
