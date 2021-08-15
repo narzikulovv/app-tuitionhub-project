@@ -1,11 +1,18 @@
-import React from 'react';
-import {Route} from "react-router-dom";
-import NotFound from "./NotFound";
+import React from "react";
+import { Route, Redirect } from "react-router-dom";
 
-const PrivateAdminPages = (props) => {
-    return localStorage.getItem("login") ?
-        <Route path={props.path} exact={props.exact} component={props.component}/> :
-        <Route component={NotFound}/>
+import {config} from "../utils/config";
+
+const PrivateAdminPages = ({ component: Component, ...rest }) => {
+  const token = localStorage.getItem(config.TOKEN);
+  return (
+    <Route
+      {...rest}
+      render={(props) => {
+        return token ? <Component {...props} /> : <Redirect to="/404" />;
+      }}
+    />
+  );
 };
 
 export default PrivateAdminPages;

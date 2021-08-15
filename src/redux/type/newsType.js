@@ -1,2 +1,6 @@
 
-export const SET_STATE = "NEWS/SETSTATE";
+export const FETCH_NEWS = "FETCH_NEWS";
+export const FETCH_NEWS_SUCCESS = "FETCH_NEWS_SUCCESS";
+export const FETCH_NEWS_ERROR = "FETCH_NEWS_ERROR";
+export const ON_LOADING = "ON_LOADING";
+export const OFF_LOADING = "OFF_LOADING";

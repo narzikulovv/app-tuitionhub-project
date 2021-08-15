@@ -16,7 +16,7 @@ const PartnersPages = () => {
             <div className="container partners_pages_con">
                 <div className="row partners_pages_row">
                     <div className="col-12">
-                        <h1>Universitetlar</h1>
+                        <h1 className="my-4 text-center">Universitetlar bilan Shartnoma</h1>
                     </div>
 
                     <div className="col-4 partners_pages_col3">

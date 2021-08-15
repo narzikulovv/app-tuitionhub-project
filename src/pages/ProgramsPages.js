@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col} from 'reactstrap';
+import {TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Card} from 'reactstrap';
 import {BsCheckAll} from 'react-icons/bs';
 import {BiGlobeAlt} from 'react-icons/bi';
 import NavigationBar from "../Components/NavigationBar";
@@ -29,7 +29,7 @@ const ProgramsPages = () => {
                                             toggle('1');
                                         }}
                                     >
-                                        Bakalavr
+                                        <div className="box">Bakalavr</div>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
@@ -39,7 +39,8 @@ const ProgramsPages = () => {
                                             toggle('2');
                                         }}
                                     >
-                                        Magistratura
+
+                                        <div className="box">Magistratura</div>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
@@ -49,81 +50,128 @@ const ProgramsPages = () => {
                                             toggle('3');
                                         }}
                                     >
-                                        PhD
+                                        <div className="box">PhD</div>
                                     </NavLink>
                                 </NavItem>
                             </Nav>
                             <TabContent activeTab={activeTab}>
                                 <TabPane tabId="1">
                                     <Row>
-                                        <Col sm="12">
-                                            <h3>Sohalar</h3>
-                                            <h6><span><BsCheckAll/></span> Lorem</h6>
-                                            <h6><span><BsCheckAll/></span> Lorem</h6>
-                                            <h6><span><BsCheckAll/></span> Lorem</h6>
-                                            <h6><span><BsCheckAll/></span> Lorem</h6>
-                                            <h6><span><BsCheckAll/></span> Lorem</h6>
+                                        <h2 className="text-light  m-auto py-3 ">Bakalavr</h2>
+                                        <Col sm="12" className="d-flex">
+                                            <Row className="my-5">
+
+                                                <Col sm="4" >
+                                                    <Card className="bg-transparent border-0">
+                                                        <h3>Sohalar</h3>
+                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                    </Card>
+                                                </Col>
 
 
-                                            <h3>Talablar</h3>
-                                            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at
-                                                autem blanditiis commodi, cupiditate dolorem doloribus enim error
-                                                eveniet expedita facilis ipsa iusto laudantium natus nobis odio optio
-                                                quos veniam!</h6>
-                                            <h3>Grand beruvchi davlatlar</h3>
-                                            <h6><span><BiGlobeAlt/></span> Rassiya</h6>
-                                            <h6><span><BiGlobeAlt/></span> Amerika</h6>
-                                            <h6><span><BiGlobeAlt/></span> Yaponiya</h6>
-                                            <h6><span><BiGlobeAlt/></span> Dubai</h6>
+                                                <Col sm="4">
+                                                    <Card className="bg-transparent border-0">
+                                                        <h3>Talablar</h3>
+                                                        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at
+                                                            autem blanditiis commodi, cupiditate dolorem doloribus enim error
+                                                            eveniet expedita facilis ipsa iusto laudantium natus nobis odio optio
+                                                            quos veniam!</h6>
+                                                    </Card>
+                                                </Col>
+                                                <Col sm="4">
+                                                    <Card className="bg-transparent border-0">
+                                                        <h3>Grand beruvchi davlatlar</h3>
+                                                        <h6><span><BiGlobeAlt/></span> Rassiya</h6>
+                                                        <h6><span><BiGlobeAlt/></span> Amerika</h6>
+                                                        <h6><span><BiGlobeAlt/></span> Yaponiya</h6>
+                                                        <h6><span><BiGlobeAlt/></span> Dubai</h6>
+                                                    </Card>
+                                                </Col>
+                                            </Row>
                                         </Col>
                                     </Row>
                                 </TabPane>
                                 <TabPane tabId="2">
                                     <Row>
-                                        <Col sm="12">
-                                            <h3>Sohalar</h3>
-                                            <h6><span><BsCheckAll/></span> Lorem</h6>
-                                            <h6><span><BsCheckAll/></span> Lorem</h6>
-                                            <h6><span><BsCheckAll/></span> Lorem</h6>
-                                            <h6><span><BsCheckAll/></span> Lorem</h6>
-                                            <h6><span><BsCheckAll/></span> Lorem</h6>
-                                            <h6><span><BsCheckAll/></span> Lorem</h6>
-                                            <h6><span><BsCheckAll/></span> Lorem</h6>
+                                        <h2 className="text-light  m-auto py-3 ">Magistratura</h2>
+                                        <Col sm="12" className="d-flex">
+                                            <Row className="my-5">
+
+                                                <Col sm="4" >
+                                                    <Card className="bg-transparent border-0">
+                                                        <h3>Sohalar</h3>
+                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                    </Card>
+                                                </Col>
 
 
-                                            <h3>Talabalar</h3>
-                                            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at
-                                                autem blanditiis commodi, cupiditate dolorem doloribus enim error
-                                                eveniet expedita facilis ipsa iusto laudantium natus nobis odio optio
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis
-                                                dignissimos doloremque dolores dolorum exercitationem minus molestiae
-                                                nam, quia quis recusandae sapiente ullam ut! Animi doloremque ea iste
-                                                nisi reprehenderit.
-                                                quos veniam!</h6>
-                                            <h3>Grand beruvchi davlatlar</h3>
-                                            <h6><span><BiGlobeAlt/></span> Rassiya</h6>
-                                            <h6><span><BiGlobeAlt/></span> Amerika</h6>
-                                            <h6><span><BiGlobeAlt/></span> Yaponiya</h6>
-                                            <h6><span><BiGlobeAlt/></span> Dubai</h6>
+                                                <Col sm="4">
+                                                    <Card className="bg-transparent border-0">
+                                                        <h3>Talablar</h3>
+                                                        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at
+                                                            autem blanditiis commodi, cupiditate dolorem doloribus enim error
+                                                            eveniet expedita facilis ipsa iusto laudantium natus nobis odio optio
+                                                            quos veniam!</h6>
+                                                    </Card>
+                                                </Col>
+                                                <Col sm="4">
+                                                    <Card className="bg-transparent border-0">
+                                                        <h3>Grand beruvchi davlatlar</h3>
+                                                        <h6><span><BiGlobeAlt/></span> Rassiya</h6>
+                                                        <h6><span><BiGlobeAlt/></span> Amerika</h6>
+                                                        <h6><span><BiGlobeAlt/></span> Yaponiya</h6>
+                                                        <h6><span><BiGlobeAlt/></span> Dubai</h6>
+                                                    </Card>
+                                                </Col>
+                                            </Row>
                                         </Col>
                                     </Row>
                                 </TabPane>
                                 <TabPane tabId="3">
                                     <Row>
-                                        <Col sm="12">
-                                            <h3>Sohalar</h3>
-                                            <h6><span><BsCheckAll/></span> Lorem</h6>
+                                        <h2 className="text-light  m-auto py-3 ">PhD</h2>
+                                        <Col sm="12" className="d-flex">
+                                            <Row className="my-5">
 
-                                            <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                <Col sm="4" >
+                                                    <Card className="bg-transparent border-0">
+                                                        <h3>Sohalar</h3>
+                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                    </Card>
+                                                </Col>
 
 
-                                            <h3>Talabalar</h3>
-                                            <h6>Lorem ipsum </h6>
-                                            <h3>Grand beruvchi davlatlar</h3>
-                                            <h6><span><BiGlobeAlt/></span> Rassiya</h6>
-                                            <h6><span><BiGlobeAlt/></span> Amerika</h6>
-                                            <h6><span><BiGlobeAlt/></span> Yaponiya</h6>
-                                            <h6><span><BiGlobeAlt/></span> Dubai</h6>
+                                                <Col sm="4">
+                                                    <Card className="bg-transparent border-0">
+                                                        <h3>Talablar</h3>
+                                                        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at
+                                                            autem blanditiis comm dolorem doloribus enim error
+                                                            e facilis ipsa iusto laudantium natus nobis odio optio
+                                                            quos veniam!</h6>
+                                                    </Card>
+                                                </Col>
+                                                <Col sm="4">
+                                                    <Card className="bg-transparent border-0">
+                                                        <h3>Grand beruvchi davlatlar</h3>
+                                                        <h6><span><BiGlobeAlt/></span> Rassiya</h6>
+                                                        <h6><span><BiGlobeAlt/></span> Amerika</h6>
+                                                        <h6><span><BiGlobeAlt/></span> Yaponiya</h6>
+                                                        <h6><span><BiGlobeAlt/></span> Dubai</h6>
+                                                    </Card>
+                                                </Col>
+                                            </Row>
                                         </Col>
                                     </Row>
                                 </TabPane>

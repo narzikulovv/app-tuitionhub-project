@@ -987,16 +987,73 @@ body {
           .tab{
             margin-top: 50px;
             .nav-tabs{
+              justify-content: center;
               border: none;
               .nav-item{
                 .nav-link{
                   background-color: transparent;
                   border: none;
-                  margin-left: 100px;
+                  margin-left: 70px;
+                  margin-right: 70px;
                   color: white;
                   font-size: 25px;
-
+                  padding: 15px 40px;
+                  display: block;
+                  position: relative;
+                  &::after{
+                    content: '';
+                    width: 0;
+                    height: 2px;
+                    background-color: #FFFFFF;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    transition: all 0.5s linear;
+                  }
+                  &:hover::after{
+                    width: 100%;
+                  }
+                  &::before{
+                    content: '';
+                    width: 0;
+                    height: 2px;
+                    background-color: #FFFFFF;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    transition: all 0.5s linear;
+                  }
+                  &:hover::before{
+                    width: 100%;
+                  }
+                  .box::after{
+                    content: '';
+                    width: 3px;
+                    height: 0;
+                    background-color: #FFFFFF;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    transition: all 0.5s linear;
+                  }
+                  .box:hover::after{
+                    height: 100%;
+                  }
+                  .box::before{
+                    content: '';
+                    width: 3px;
+                    height: 0;
+                    background-color: #FFFFFF;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    transition: all 0.5s linear;
+                  }
+                  .box:hover::before{
+                    height: 100%;
+                  }
                 }
+
               }
             }
 
@@ -1186,5 +1243,32 @@ body {
     }
   }
 }
+////////////////// HomePages Pages  ///////////////////
+
+.modal{
+  .modal_s{
+    box-sizing: border-box;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 40% 91%;
+    background-repeat: no-repeat;
+
+    background-image: url("../images/images (2).jpeg");
 
 
+    .modal-header{
+        span{
+          color: #FFFFFF;
+        }
+    }
+    .modal-body{
+      form{
+        ::placeholder{
+          color: #FFFFFF;
+          opacity: 1;
+        }
+      }
+
+    }
+  }
+}
