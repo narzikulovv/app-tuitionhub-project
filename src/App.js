@@ -4,6 +4,7 @@ import Home from "./Components/Home";
 import Programs from "./Components/Programs";
 import Certificates from "./Components/Certificates";
 import News from "./Components/News";
+import Grants from "./Components/Grants";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Programs/>
       <Certificates/>
       <News/>
+      <Grants/>
     </div>
   );
 }
