@@ -55,9 +55,9 @@ const PartnersPages = () => {
                             </div>
                         </div>
                     </div>
-                   <div className="container">
+                   <div className="container flag_con">
                        <h4 className="text-secondary  ml-3 mt-4">Davlatlar</h4>
-                       <div className="row mb-5">
+                       <div className="row flag_row mb-5">
 
                            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
                                <a href="#!" className="large-menu-item flag_img">

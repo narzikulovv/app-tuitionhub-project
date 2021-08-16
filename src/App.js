@@ -20,7 +20,6 @@ import ContakPages from "./pages/ContakPages";
 import ContackStudent from "./pages/ContackStudent";
 
 function App() {
-<<<<<<< HEAD
     const dispatch = useDispatch();
     const token = localStorage.getItem(config.TOKEN);
     const { pathname } = useLocation();
@@ -52,6 +51,11 @@ function App() {
             <Route path="/news" exact component={NewsPages} />
             <Route path="/programs" exact component={ProgramsPages} />
             <Route path="/partners" exact component={PartnersPages} />
+            <Route path="/contak" exact component={ContakPages} />
+            <Route path="/contak/student" exact component={ContackStudent} />
+            <Route path="/contak/partners" exact component={ContackStudent} />
+
+
 
             {/*  */}
 
@@ -59,51 +63,6 @@ function App() {
             <Redirect to="/404" />
         </Switch>
     );
-=======
-  const dispatch = useDispatch();
-  const token = localStorage.getItem(config.TOKEN);
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    if (!token) return;
-    dispatch(userme());
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pathname]);
-
-  const date1 = new Date("8/16/2021");
-  const date2 = new Date();
-  console.log(date1);
-  console.log(date2);
-
-  // if (date2 > date1) return <h1>Ok ~~~</h1>;
-
-  return (
-    <Switch>
-      <PrivateAdminPages path="/admin" exact component={AdminPages} />
-      <PrivateAdminPages path="/admin/menus" exact component={AdminMenus} />
-      <PrivateAdminPages path="/admin/news" exact component={AdminNews} />
-      {/* <Route path="/admin/news" exact component={AdminNews} /> */}
-
-      {/*  */}
-
-      <Route path="/" exact component={HomePages} />
-      <Route path="/login" exact component={AdminPassword} />
-      <Route path="/news" exact component={NewsPages} />
-      <Route path="/programs" exact component={ProgramsPages} />
-      <Route path="/partners" exact component={PartnersPages} />
-      <Route path="/contak" exact component={ContakPages} />
-      <Route path="/contak/student" exact component={ContackStudent} />
-      <Route path="/contak/partners" exact component={ContackStudent} />
-
-
-
-      {/*  */}
-
-      <Route path="/404" component={NotFound} />
-      <Redirect to="/404" />
-    </Switch>
-  );
->>>>>>> 6f8297f403ab7c170b0d1f56b658aff4bf217b6e
 }
 
 export default App;
