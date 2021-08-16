@@ -55,37 +55,95 @@ const PartnersPages = () => {
                             </div>
                         </div>
                     </div>
+                   <div className="container flag_con">
+                       <h4 className="text-secondary  ml-3 mt-4">Davlatlar</h4>
+                       <div className="row flag_row mb-5">
 
-                    <div className="col-12">
-                        <h1>Davlatlar</h1>
+                           <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                               <a href="#!" className="large-menu-item flag_img">
+                                   <img src="images/maxresdefault.jpg" alt=""/>
+                                   <span className="title">AQSH</span></a>
+                           </div>
+                              <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                                  <div className="flag">
+                                      <a href="#!" className="large-menu-item flag_img">
+                                          <img src="images/british-flag-icon-12988750.jpg" alt=""/>
+                                          <span className="title">Buyuk Britaniya</span></a>
+                                  </div>
+                              </div>
+                           <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                               <a href="#!" className="large-menu-item flag_img">
+                                   <img src="images/98470_flag_512x512.png" alt=""/>
+                                   <span className="title">Fransiya</span></a>
+                           </div>
+                           <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                               <a href="#!" className="large-menu-item flag_img">
+                                   <img src="images/flag_japan.png" alt=""/>
+                                   <span className="title">Yaponiya</span></a>
+                           </div>
+                           <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                               <a href="#!" className="large-menu-item flag_img">
+                                   <img src="images/ru.png" alt=""/>
+                                   <span className="title">Rossiya</span></a>
+                           </div>
+                           <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                               <a href="#!" className="large-menu-item flag_img">
+                                   <img src="images/germany-.jpg" alt=""/>
+                                   <span className="title">Germaniya</span></a>
+                           </div>
+                           <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                               <a href="#!" className="large-menu-item flag_img">
+                                   <img src="images/download.png" alt=""/>
+                                   <span className="title">Turkiya</span></a>
+                           </div>
 
-                        <h4>USA <span><FaArrowRight/></span> 20 universites</h4>
-                        <h4>UF <span><FaArrowRight/></span> 15 universites</h4>
-                        <h4>USA <span><FaArrowRight/></span> 30 universites</h4>
-                        <h4>USA <span><FaArrowRight/></span> 20 universites</h4>
-
-                        {block === true ? <div >
-                            <h4>USA <span><FaArrowRight/></span> 20 universites</h4>
-                            <h4>UF <span><FaArrowRight/></span> 15 universites</h4>
-                            <h4>USA <span><FaArrowRight/></span> 30 universites</h4>
-                            <h4>USA <span><FaArrowRight/></span> 20 universites</h4>
-                            <h4>USA <span><FaArrowRight/></span> 20 universites</h4>
-                            <h4>USA <span><FaArrowRight/></span> 20 universites</h4>
-                            <h4>USA <span><FaArrowRight/></span> 20 universites</h4>
-                            <h4>USA <span><FaArrowRight/></span> 20 universites</h4>
-                            <h4>USA <span><FaArrowRight/></span> 20 universites</h4>
-                            <h4>USA <span><FaArrowRight/></span> 20 universites</h4>
-                            <h4>USA <span><FaArrowRight/></span> 20 universites</h4>
-                            <h4>USA <span><FaArrowRight/></span> 20 universites</h4>
-                            <h4>USA <span><FaArrowRight/></span> 20 universites</h4>
-                            <h4>USA <span><FaArrowRight/></span> 20 universites</h4>
-                            <h4>USA <span><FaArrowRight/></span> 20 universites</h4>
-                        </div> : ""}
-
-
-                        <button className="btn btn-success" onClick={open}>105 wiev</button>
-                    </div>
-
+                           <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                               <a href="#!" className="large-menu-item flag_img">
+                                   <img src="images/argin.jpg" alt=""/>
+                                   <span className="title">Argintina</span></a>
+                           </div>
+                           <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                               <a href="#!" className="large-menu-item flag_img">
+                                   <img src="images/kanada.png" alt=""/>
+                                   <span className="title">Kanada</span></a>
+                           </div>
+                           <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                               <a href="#!" className="large-menu-item flag_img">
+                                   <img src="images/iroq.png" alt=""/>
+                                   <span className="title">Iroq</span></a>
+                           </div>
+                           <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                               <a href="#!" className="large-menu-item flag_img">
+                                   <img src="images/maxresdefault.jpg" alt=""/>
+                                   <span className="title">AQSH</span></a>
+                           </div>
+                           <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                               <a href="#!" className="large-menu-item flag_img">
+                                   <img src="images/angliya.png" alt=""/>
+                                   <span className="title">Angliya</span></a>
+                           </div>
+                           <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                               <a href="#!" className="large-menu-item flag_img">
+                                   <img src="images/flag_spain.png" alt=""/>
+                                   <span className="title">Ispaniya</span></a>
+                           </div>
+                           <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                               <a href="#!" className="large-menu-item flag_img">
+                                   <img src="images/Sudan-icon.png" alt=""/>
+                                   <span className="title">Saudiya Arabiston</span></a>
+                           </div>
+                           <div className="col-lg-3 col-md-4  col-sm- col-126">
+                               <a href="#!" className="large-menu-item flag_img">
+                                   <img src="images/Ukraine-icon.png" alt=""/>
+                                   <span className="title">Ukraina</span></a>
+                           </div>
+                           <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                               <a href="#!" className="large-menu-item flag_img">
+                                   <img src="images/latviya.png" alt=""/>
+                                   <span className="title">Latviya</span></a>
+                           </div>
+                       </div>
+                   </div>
                 </div>
             </div>
             <Footer/>
