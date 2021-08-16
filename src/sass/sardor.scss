@@ -80,6 +80,9 @@ body {
 
           button {
             border: 0 !important;
+            span{
+              color: #FFFFFF;
+            }
           }
         }
 
@@ -88,7 +91,9 @@ body {
 
             .navitem_main {
               margin-left: 30px;
-
+              @media (max-width: 992px) {
+                margin-left: 10px;
+              }
               .navlink_main {
                 font-weight: 600;
                 font-size: 18px;
@@ -201,7 +206,10 @@ body {
     background-repeat: no-repeat;
 
     background-image: url("../images/bannar-bg.png");
-    height: calc(100vh + 200px);
+    height: calc(100vh - 110px);
+    @media (max-width: 992px) {
+      height: 100vh;
+    }
 
     .home_con_fluid {
 
@@ -230,13 +238,16 @@ body {
               text-shadow: 1px 1px 3px #FFFFFF;
               @media (max-width: 1200px) {
                 font-size: 40px;
+                line-height: 50px;
               }
               @media (max-width: 992px) {
                 margin-top: 30px;
                 text-align: center;
+                line-height: 40px;
               }
               @media (max-width: 576px) {
                 font-size: 35px;
+                line-height: 40px;
               }
               @media (max-width: 475px) {
                 font-size: 25px;
@@ -307,17 +318,8 @@ body {
   /////////////////////// PROGRAMS Componets ////////////////
 
   .programs_main {
-    margin-top: -250px;
+
     padding-top: 20px;
-    //padding-top: 50px;
-    //width: 100%;
-    //background-attachment: fixed;
-    //background-position: center;
-    //background-size: cover;
-    //background-repeat: no-repeat;
-    //
-    //background-image: url("../images/background1.jpg");
-    //height: 90vh;
     background-color: #0E2051;
 
     .con_programs {
@@ -390,12 +392,12 @@ body {
   .certificates_main {
     padding-top: 50px;
     width: 100%;
+    background-image: url("../images/sertifikat-bg.png");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
-    background-image: url("../images/sertifikat-bg.png");
     padding-bottom: 50px;
 
     .cer_con {
@@ -453,14 +455,20 @@ body {
 
           .one {
             background-image: url("../images/sertificat-one.png");
+            background-repeat: no-repeat;
+            background-size: cover;
           }
 
           .two {
             background-image: url("../images/sertificat-two.png");
+            background-repeat: no-repeat;
+            background-size: cover;
           }
 
           .three {
             background-image: url("../images/sertificat-three.png");
+            background-repeat: no-repeat;
+            background-size: cover;
           }
         }
       }
@@ -505,9 +513,6 @@ body {
             border: 0;
 
             .card-header {
-              display: flex;
-              align-items: center;
-              justify-content: center;
               padding: 0;
 
               img {
@@ -516,8 +521,8 @@ body {
             }
 
             .card-body {
-
-              h1 {
+              padding: 0;
+              h2 {
                 font-family: SF Pro Display;
                 font-style: normal;
                 font-weight: 600;
@@ -525,9 +530,10 @@ body {
                 line-height: 34px;
                 letter-spacing: -0.02em;
                 color: #fff;
+                margin-top: 5px;
               }
 
-              h4 {
+              p {
                 font-family: SF Pro Display;
                 font-style: normal;
                 font-weight: normal;
@@ -720,25 +726,8 @@ body {
             border-radius: 1rem;
             padding: 25px;
 
-
-            h1 {
-              font-weight: 500;
-              color: #5c5858;
-              font-size: 25px;
-              margin-bottom: 30px;
-            }
-
-            input {
-              margin-bottom: 25px;
-            }
-
-            button {
-              background-color: #00D74A;
-              width: 50%;
-              margin-top: 30px;
-              color: #FFFFFF;
-              font-weight: 600;
-              margin-bottom: 45px;
+            iframe{
+              border-radius: 1rem;
             }
           }
         }
@@ -871,7 +860,7 @@ body {
         .news_pages_row {
           padding-bottom: 50px;
 
-          .news_pages_col6 {
+          .news_pages_col4 {
             .card {
               .card-body {
                 h2 {
@@ -931,7 +920,6 @@ body {
       }
     }
   }
-
 
   .contact_sent_main {
     display: flex;
@@ -1000,57 +988,14 @@ body {
                   padding: 15px 40px;
                   display: block;
                   position: relative;
-                  &::after{
-                    content: '';
-                    width: 0;
-                    height: 2px;
-                    background-color: #FFFFFF;
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    transition: all 0.5s linear;
-                  }
-                  &:hover::after{
-                    width: 100%;
-                  }
-                  &::before{
-                    content: '';
-                    width: 0;
-                    height: 2px;
-                    background-color: #FFFFFF;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    transition: all 0.5s linear;
-                  }
-                  &:hover::before{
-                    width: 100%;
-                  }
-                  .box::after{
-                    content: '';
-                    width: 3px;
-                    height: 0;
-                    background-color: #FFFFFF;
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    transition: all 0.5s linear;
-                  }
-                  .box:hover::after{
-                    height: 100%;
-                  }
-                  .box::before{
-                    content: '';
-                    width: 3px;
-                    height: 0;
-                    background-color: #FFFFFF;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    transition: all 0.5s linear;
-                  }
-                  .box:hover::before{
-                    height: 100%;
+
+
+                  .box{
+                    opacity: 0.77;
+                    border: 3px solid #FFFFFF;
+                    box-sizing: border-box;
+                    border-radius: 20px;
+                    padding: 5px;
                   }
                 }
 
@@ -1242,8 +1187,10 @@ body {
       padding: 30px;
     }
   }
+
 }
-////////////////// HomePages Pages  ///////////////////
+
+  ////////////////// HomePages Pages  //////////////////////////////
 
 .modal{
   .modal_s{
@@ -1257,9 +1204,9 @@ body {
 
 
     .modal-header{
-        span{
-          color: #FFFFFF;
-        }
+      span{
+        color: #FFFFFF;
+      }
     }
     .modal-body{
       form{

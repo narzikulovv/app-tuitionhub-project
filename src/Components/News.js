@@ -34,7 +34,7 @@ const News = (props) => {
                                         </div>
                                         <div className="card-body ">
                                             <h2>{i.titleUz}</h2>
-                                            <p>{i.descriptionUz}</p>
+                                            <p>{i.descriptionUz.length > 100 ? i.descriptionUz.substring(0, 100) + " ..." : ""}</p>
                                         </div>
                                     </div>
                                 </div> : ""

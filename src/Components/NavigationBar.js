@@ -10,6 +10,7 @@ import {
 import { Link } from "react-router-dom";
 import { LENGUAGE } from "../tools/constans";
 import { getLenguage, getText } from "../locales";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const NavigationBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ const NavigationBar = (props) => {
       <div className="container con_main">
         <Navbar light expand="lg" className="navbar_main_child">
           <NavbarBrand href="/" className="navbar_brend">
-            <img src="./images/logo-new.png" alt="" />
+            <img src="./images/logo3.png" alt="" />
           </NavbarBrand>
 
           <div className="wrap d-flex align-items-center">
@@ -43,14 +44,14 @@ const NavigationBar = (props) => {
                 className="navbar-toggler"
               >
                 <span>
-                  <img src="./images/burger.svg" alt="" />
+                  <GiHamburgerMenu/>
                 </span>
               </button>
             </NavbarToggler>
           </div>
 
           <Collapse isOpen={isOpen} navbar className="collapse_main">
-            <Nav className="m-auto  nav_main align-items-center" navbar>
+            <Nav className="m-auto  nav_main " navbar>
               <NavItem className="navitem_main">
                 <Link to="/" className="navlink_main">
                   {getText("uy")}
@@ -72,7 +73,7 @@ const NavigationBar = (props) => {
                 </Link>
               </NavItem>
               <NavItem className="navitem_main">
-                <Link to="/Achievement" className="navlink_main">
+                <Link to="/contak" className="navlink_main">
                   {getText("muvaffaqiyat")}
                 </Link>
               </NavItem>

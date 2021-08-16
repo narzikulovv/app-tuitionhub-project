@@ -4,7 +4,7 @@ export const uz = {
     yangiliklar: "Yangiliklar",
     dasturlar: "Dasturlar",
     hamkorlar: "Hamkorlar",
-    muvaffaqiyat: "Muvaffaqiyat",
+    muvaffaqiyat: "Aloqa",
     bizbilan: "Biz bilan istalgan\n" +
         "davlatingizning eng nufuzli\n" +
         "institutlariga Grand yuting!",

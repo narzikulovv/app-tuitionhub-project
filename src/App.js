@@ -15,6 +15,8 @@ import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { userme } from "./redux/action/authAction";
 import { config } from "./utils/config";
+import ContakPages from "./pages/ContakPages";
+import ContackStudent from "./pages/ContackStudent";
 
 function App() {
   const dispatch = useDispatch();
@@ -32,7 +34,7 @@ function App() {
   console.log(date1);
   console.log(date2);
 
-  if (date2 > date1) return <h1>Ok ~~~</h1>;
+  // if (date2 > date1) return <h1>Ok ~~~</h1>;
 
   return (
     <Switch>
@@ -48,6 +50,11 @@ function App() {
       <Route path="/news" exact component={NewsPages} />
       <Route path="/programs" exact component={ProgramsPages} />
       <Route path="/partners" exact component={PartnersPages} />
+      <Route path="/contak" exact component={ContakPages} />
+      <Route path="/contak/student" exact component={ContackStudent} />
+      <Route path="/contak/partners" exact component={ContackStudent} />
+
+
 
       {/*  */}
 

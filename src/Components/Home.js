@@ -21,7 +21,7 @@ const Home = () => {
                             <Slider {...settings}>
                                 <div className="col-12">
                                     <div className="row">
-                                        <div className="home_col_7 col-7">
+                                        <div className="home_col_7 col-lg-7 col-md-12 col-sm-12 col-12">
                                             <h1>{getText("bizbilan")}</h1>
 
                                             <h2 className="aqsh"> {getText("qaysi")}</h2>
@@ -34,7 +34,7 @@ const Home = () => {
                                 </div>
                                 <div className="col-12">
                                     <div className="row">
-                                        <div className="home_col_7 col-7">
+                                        <div className="home_col_7 col-lg-7 col-md-12 col-sm-12 col-12">
                                             <h1>{getText("bizbilan")}</h1>
 
                                             <h2 className="aqsh">{getText("qaysi")}</h2>
@@ -47,7 +47,7 @@ const Home = () => {
                                 </div>
                                 <div className="col-12">
                                     <div className="row">
-                                        <div className="home_col_7 col-7">
+                                        <div className="home_col_7 col-lg-7 col-md-12 col-sm-12 col-12">
                                             <h1>{getText("bizbilan")}</h1>
 
                                             <h2 className="aqsh">{getText("qaysi")}</h2>

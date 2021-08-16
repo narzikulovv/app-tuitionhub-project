@@ -27,21 +27,21 @@ const HomePages = () => {
     return (
         <div>
 
-            <Modal className="w-25 rounded-pill" isOpen={open} toggle={()=> toggle({open: false})}>
-               <div className="modal_s rounded">
-                   <ModalHeader className="text-white" toggle={()=> toggle({open: false})}>Ariza topshirish</ModalHeader>
-                   <ModalBody>
+            {/*<Modal className="w-25 rounded-pill" isOpen={open} toggle={()=> toggle({open: false})}>*/}
+            {/*   <div className="modal_s rounded">*/}
+            {/*       <ModalHeader className="text-white" toggle={()=> toggle({open: false})}>Ariza topshirish</ModalHeader>*/}
+            {/*       <ModalBody>*/}
 
-                       <form>
-                           <input type="text" placeholder="Ism Familiya" className="form-control mt-3 bg-transparent text-white"/>
+            {/*           <form>*/}
+            {/*               <input type="text" placeholder="Ism Familiya" className="form-control mt-3 bg-transparent text-white"/>*/}
 
-                           <input type="gmail" placeholder="telefon" className="form-control mt-3 bg-transparent "/>
-                           <textarea typeof="text" placeholder="Savol yo'llang" className="form-control mt-3 bg-transparent "/>
-                           <button type="button" className="btn btn-secondary m-3 ml-auto d-flex mr-0" >Jo'natish</button>
-                       </form>
-                   </ModalBody>
-               </div>
-            </Modal>
+            {/*               <input type="gmail" placeholder="telefon" className="form-control mt-3 bg-transparent "/>*/}
+            {/*               <textarea typeof="text" placeholder="Savol yo'llang" className="form-control mt-3 bg-transparent "/>*/}
+            {/*               <button type="button" className="btn btn-secondary m-3 ml-auto d-flex mr-0" >Jo'natish</button>*/}
+            {/*           </form>*/}
+            {/*       </ModalBody>*/}
+            {/*   </div>*/}
+            {/*</Modal>*/}
 
 
             <NavigationBar/>

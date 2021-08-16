@@ -4,7 +4,7 @@ export const ru = {
     yangiliklar: "Новости",
     dasturlar: "Программ",
     hamkorlar: "Партнеры",
-    muvaffaqiyat: "Достижение",
+    muvaffaqiyat: "Контакт",
     bizbilan: "Разыскивается с нами\n" +
         "самый влиятельный в вашем штате\n" +
         "Великие институты глотания!",
