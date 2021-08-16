@@ -4,7 +4,7 @@ export const en = {
     yangiliklar: "News",
     dasturlar: "Programs",
     hamkorlar: "Partners",
-    muvaffaqiyat: "Achievement",
+    muvaffaqiyat: "Contact",
     bizbilan: "Wanted with us\n" +
         "the most influential of your state\n" +
         "Grand swallowing institutes!",

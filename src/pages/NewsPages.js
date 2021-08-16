@@ -19,12 +19,12 @@ const NewsPages = () => {
             <NavigationBar/>
             <div className="news_pages_bg">
                 <div className="container news_pages_con">
-                    <div className="row ">
+                    <div className="row news_pages_row">
                         {news.map((i, idx) => {
                                 return(
                                     <div
                                         key={i.id}
-                                        className="col-4 mt-3"
+                                        className="col-12 col-md-6 col-lg-4 mt-3 news_pages_col4"
                                     >
                                         <div className="card border-0 bg-transparent">
                                             <div className="card-header p-0">
@@ -36,7 +36,7 @@ const NewsPages = () => {
                                             </div>
                                             <div className="card-body p-0">
                                                 <h2>{i.titleUz}</h2>
-                                                <p>{i.descriptionUz}</p>
+                                                <p>{i.descriptionUz.length > 100 ? i.descriptionUz.substring(0, 90) + " ..." : ""}</p>
                                             </div>
                                         </div>
                                     </div>
