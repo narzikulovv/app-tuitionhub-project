@@ -57,23 +57,23 @@ const ProgramsPages = () => {
                             <TabContent activeTab={activeTab}>
                                 <TabPane tabId="1">
                                     <Row>
-                                        <h2 className="text-light  m-auto py-3 ">Bakalavr</h2>
+
                                         <Col sm="12" className="d-flex">
                                             <Row className="my-5">
 
-                                                <Col sm="4" >
+                                                <Col sm="12" md="6" lg="4">
                                                     <Card className="bg-transparent border-0">
                                                         <h3>Sohalar</h3>
-                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
-                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
-                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
-                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
-                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                        <h6> Lorem</h6>
+                                                        <h6> Lorem</h6>
+                                                        <h6> Lorem</h6>
+                                                        <h6> Lorem</h6>
+                                                        <h6> Lorem</h6>
                                                     </Card>
                                                 </Col>
 
 
-                                                <Col sm="4">
+                                                <Col sm="12" md="6" lg="4">
                                                     <Card className="bg-transparent border-0">
                                                         <h3>Talablar</h3>
                                                         <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at
@@ -82,13 +82,13 @@ const ProgramsPages = () => {
                                                             quos veniam!</h6>
                                                     </Card>
                                                 </Col>
-                                                <Col sm="4">
+                                                <Col sm="12" md="6" lg="4">
                                                     <Card className="bg-transparent border-0">
                                                         <h3>Grand beruvchi davlatlar</h3>
-                                                        <h6><span><BiGlobeAlt/></span> Rassiya</h6>
-                                                        <h6><span><BiGlobeAlt/></span> Amerika</h6>
-                                                        <h6><span><BiGlobeAlt/></span> Yaponiya</h6>
-                                                        <h6><span><BiGlobeAlt/></span> Dubai</h6>
+                                                        <h6> Rassiya</h6>
+                                                        <h6> Amerika</h6>
+                                                        <h6> Yaponiya</h6>
+                                                        <h6> Dubai</h6>
                                                     </Card>
                                                 </Col>
                                             </Row>
@@ -97,24 +97,23 @@ const ProgramsPages = () => {
                                 </TabPane>
                                 <TabPane tabId="2">
                                     <Row>
-                                        <h2 className="text-light  m-auto py-3 ">Magistratura</h2>
+
                                         <Col sm="12" className="d-flex">
                                             <Row className="my-5">
 
-                                                <Col sm="4" >
+                                                <Col sm="12" md="6" lg="4" >
                                                     <Card className="bg-transparent border-0">
                                                         <h3>Sohalar</h3>
-                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
-                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
-                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
-                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
-                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
-                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                        <h6> Lorem</h6>
+                                                        <h6> Lorem</h6>
+                                                        <h6> Lorem</h6>
+                                                        <h6> Lorem</h6>
+                                                        <h6> Lorem</h6>
                                                     </Card>
                                                 </Col>
 
 
-                                                <Col sm="4">
+                                                <Col sm="12" md="6" lg="4">
                                                     <Card className="bg-transparent border-0">
                                                         <h3>Talablar</h3>
                                                         <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at
@@ -123,13 +122,13 @@ const ProgramsPages = () => {
                                                             quos veniam!</h6>
                                                     </Card>
                                                 </Col>
-                                                <Col sm="4">
+                                                <Col sm="12" md="6" lg="4">
                                                     <Card className="bg-transparent border-0">
                                                         <h3>Grand beruvchi davlatlar</h3>
-                                                        <h6><span><BiGlobeAlt/></span> Rassiya</h6>
-                                                        <h6><span><BiGlobeAlt/></span> Amerika</h6>
-                                                        <h6><span><BiGlobeAlt/></span> Yaponiya</h6>
-                                                        <h6><span><BiGlobeAlt/></span> Dubai</h6>
+                                                        <h6> Rassiya</h6>
+                                                        <h6> Amerika</h6>
+                                                        <h6> Yaponiya</h6>
+                                                        <h6> Dubai</h6>
                                                     </Card>
                                                 </Col>
                                             </Row>
@@ -138,22 +137,22 @@ const ProgramsPages = () => {
                                 </TabPane>
                                 <TabPane tabId="3">
                                     <Row>
-                                        <h2 className="text-light  m-auto py-3 ">PhD</h2>
+
                                         <Col sm="12" className="d-flex">
                                             <Row className="my-5">
 
-                                                <Col sm="4" >
+                                                <Col sm="12" md="6" lg="4" >
                                                     <Card className="bg-transparent border-0">
                                                         <h3>Sohalar</h3>
-                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
-                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
-                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
-                                                        <h6><span><BsCheckAll/></span> Lorem</h6>
+                                                        <h6> Lorem</h6>
+                                                        <h6> Lorem</h6>
+                                                        <h6> Lorem</h6>
+                                                        <h6> Lorem</h6>
                                                     </Card>
                                                 </Col>
 
 
-                                                <Col sm="4">
+                                                <Col sm="12" md="6" lg="4">
                                                     <Card className="bg-transparent border-0">
                                                         <h3>Talablar</h3>
                                                         <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at
@@ -162,13 +161,13 @@ const ProgramsPages = () => {
                                                             quos veniam!</h6>
                                                     </Card>
                                                 </Col>
-                                                <Col sm="4">
+                                                <Col sm="12" md="6" lg="4">
                                                     <Card className="bg-transparent border-0">
                                                         <h3>Grand beruvchi davlatlar</h3>
-                                                        <h6><span><BiGlobeAlt/></span> Rassiya</h6>
-                                                        <h6><span><BiGlobeAlt/></span> Amerika</h6>
-                                                        <h6><span><BiGlobeAlt/></span> Yaponiya</h6>
-                                                        <h6><span><BiGlobeAlt/></span> Dubai</h6>
+                                                        <h6> Rassiya</h6>
+                                                        <h6> Amerika</h6>
+                                                        <h6> Yaponiya</h6>
+                                                        <h6> Dubai</h6>
                                                     </Card>
                                                 </Col>
                                             </Row>

@@ -35,8 +35,8 @@ const HomePages = () => {
             {/*           <form>*/}
             {/*               <input type="text" placeholder="Ism Familiya" className="form-control mt-3 bg-transparent text-white"/>*/}
 
-            {/*               <input type="gmail" placeholder="telefon" className="form-control mt-3 bg-transparent "/>*/}
-            {/*               <textarea typeof="text" placeholder="Savol yo'llang" className="form-control mt-3 bg-transparent "/>*/}
+            {/*               <input type="gmail" placeholder="telefon" className="form-control mt-3 bg-transparent text-white"/>*/}
+            {/*               <textarea typeof="text" placeholder="Savol yo'llang" className="form-control mt-3 bg-transparent text-white"/>*/}
             {/*               <button type="button" className="btn btn-secondary m-3 ml-auto d-flex mr-0" >Jo'natish</button>*/}
             {/*           </form>*/}
             {/*       </ModalBody>*/}
