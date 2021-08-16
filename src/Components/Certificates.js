@@ -9,8 +9,8 @@ const Certificates = () => {
                         <h1>Certificates</h1>
                     </div>
                     <div className="col-12 col-md-6 col-lg-4 cer_col4">
-                        <div className="card cer_card">
-                            <div className="card-header">
+                        <div className="card cer_card one">
+                            <div className="card-header1">
                                 <h1>Firma guvohnomasi</h1>
                             </div>
                             <div className="card-body">
@@ -20,8 +20,8 @@ const Certificates = () => {
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-4  cer_col4">
-                        <div className="card cer_card">
-                            <div className="card-header">
+                        <div className="card cer_card two">
+                            <div className="card-header1">
                                 <h1>Firma guvohnomasi</h1>
                             </div>
                             <div className="card-body">
@@ -31,8 +31,8 @@ const Certificates = () => {
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-4 cer_col4">
-                        <div className="card cer_card">
-                            <div className="card-header">
+                        <div className="card cer_card three">
+                            <div className="card-header1">
                                 <h1>Firma guvohnomasi</h1>
                             </div>
                             <div className="card-body">

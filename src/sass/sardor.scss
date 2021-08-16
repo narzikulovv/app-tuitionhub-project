@@ -2,21 +2,47 @@ h1, h2, h3, h4, h5, h6, ul, p, a {
   text-decoration: none;
   margin-bottom: 0;
   padding-bottom: 0;
+  font-family: sans-serif;
 }
 
+
+////////////////////////// Scroll ////////////////////////////
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(45deg, rgb(87, 179, 255), rgb(245, 132, 255));
+}
 body {
 
-  background-color: #F6F6F6;
+  background: #EBEDEF;
+  position: relative;
 
   ///////////////////////// NAVBAR Components ////////////////
 
   .navbar_main {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background: #0E2051;
+    z-index: 999;
+
     .con_main {
       .navbar_main_child {
         .navbar_brend {
+          font-family: Roboto;
+          color: #FFFFFF;
+          font-size: 30px;
+
           img {
-            width: 200px;
-            height: 60px;
+            width: 80%;
+            height: auto;
             @media (max-width: 1200px) {
               width: 150px;
               height: 50px;
@@ -27,8 +53,9 @@ body {
             }
           }
         }
-        .wrap{
-          .select_two{
+
+        .wrap {
+          .select_two {
             @media (max-width: 2000px) {
               display: none;
             }
@@ -45,6 +72,7 @@ body {
 
           }
         }
+
         .burger {
           border: 0 !important;
           padding: 0 !important;
@@ -58,13 +86,18 @@ body {
           .nav_main {
 
             .navitem_main {
+              margin-left: 30px;
+
               .navlink_main {
                 font-weight: 600;
                 font-size: 18px;
-                color: black;
-                &:hover{
+                color: #FFFFFF;
+                text-decoration: none;
+
+                &:hover {
                   color: #72da26;
                 }
+
                 @media (max-width: 1200px) {
                   font-size: 16px;
                 }
@@ -73,7 +106,8 @@ body {
                 }
               }
             }
-            .register_two{
+
+            .register_two {
               @media (max-width: 2000px) {
                 display: none;
               }
@@ -86,10 +120,12 @@ body {
           .register_one {
             font-weight: 600;
             font-size: 18px;
-            color: black;
-            &:hover{
+            color: #FFFFFF;
+
+            &:hover {
               color: #72da26;
             }
+
             @media (max-width: 1200px) {
               font-size: 16px;
             }
@@ -137,9 +173,13 @@ body {
               }
             }
           }
+
           .select {
             margin-right: 20px;
-            width: 80px;
+            width: 45px;
+            height: 25px;
+            padding: 0;
+            font-size: 14px;
             @media (max-width: 992px) {
               display: none;
             }
@@ -151,23 +191,42 @@ body {
 
   //////////////////////// HOME Components ///////////////////
 
-  .home_main{
-    background-color: #475463;
+  .home_main {
+    //background-color: #475463;
     width: 100%;
-    .home_con_fluid{
-      .home_con{
-        .home_row{
-          .home_col_7{
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-image: url("../images/bannar-bg.png");
+    height: calc(100vh + 200px);
+
+    .home_con_fluid {
+
+      .home_con {
+        .home_row {
+          .slick-dots {
+            display: none !important;
+          }
+
+          .home_col_7 {
             padding-bottom: 20px;
-            h1{
+
+            h1 {
               margin-top: 88px;
               font-family: SF Pro Display;
               font-style: normal;
               font-weight: bold;
-              font-size: 48px;
-              line-height: 62px;
+
               letter-spacing: -0.01em;
-              color: #FFFFFF;
+              color: #2F3E64;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 64px;
+              line-height: 60px;
+              z-index: 99999;
+              text-shadow: 1px 1px 3px #FFFFFF;
               @media (max-width: 1200px) {
                 font-size: 40px;
               }
@@ -185,7 +244,8 @@ body {
                 font-size: 20px;
               }
             }
-            .aqsh{
+
+            .aqsh {
               font-family: SF Pro Display;
               font-style: normal;
               font-weight: 800;
@@ -193,6 +253,7 @@ body {
               line-height: 38px;
               color: #00D74A;
               margin-top: 30px;
+              text-shadow: 1px 1px 3px #111;
               @media (max-width: 1200px) {
                 font-size: 25px;
               }
@@ -214,19 +275,22 @@ body {
               }
             }
           }
-          .home_col_5{
+
+          .home_col_5 {
             position: relative;
             height: 500px;
             @media (max-width: 992px) {
               display: none;
             }
-            .bg{
+
+            .bg {
               position: absolute;
               width: 100%;
               height: 100%
 
             }
-            .student{
+
+            .student {
               width: 90%;
               height: 100%;
               position: absolute;
@@ -241,31 +305,50 @@ body {
 
   /////////////////////// PROGRAMS Componets ////////////////
 
-  .programs_main{
-    margin-top: 50px;
-    .con_programs{
-      .row_programs{
-        .col12_programs{
-          h1{
+  .programs_main {
+    margin-top: -250px;
+    padding-top: 20px;
+    //padding-top: 50px;
+    //width: 100%;
+    //background-attachment: fixed;
+    //background-position: center;
+    //background-size: cover;
+    //background-repeat: no-repeat;
+    //
+    //background-image: url("../images/background1.jpg");
+    //height: 90vh;
+    background-color: #0E2051;
+
+    .con_programs {
+      .row_programs {
+        .col12_programs {
+          h1 {
             font-family: SF Pro Display;
             font-style: normal;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
             letter-spacing: -0.02em;
-            color: #000000;
+            color: #FFFFFF;
+            text-shadow: 1px 1px 1px black;
 
           }
+
           margin-bottom: 50px;
         }
-        .col6_programs{
-          .card_programs{
-            background: #FFFFFF;
+
+        .col6_programs {
+          .card_programs {
             box-shadow: 0px 2px 2px rgba(188, 188, 188, 0.25);
             border-radius: 10px;
             margin-bottom: 30px;
-            .card-header{
-              h1{
+
+            background-image: url("../images/programs-bg2.png");
+
+
+            .card-header1 {
+
+              h1 {
                 font-family: SF Pro Display;
                 font-style: normal;
                 font-weight: 600;
@@ -274,20 +357,26 @@ body {
                 letter-spacing: -0.02em;
                 color: #000000;
                 text-align: center;
+                margin-top: 10px;
               }
             }
-            .card-body{
-              h4{
+
+            .card-body {
+              position: relative;
+
+              h4 {
                 font-family: SF Pro Display;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 18px;
                 line-height: 40px;
                 color: #000000;
-                &:hover{
+
+                &:hover {
                   color: #00D74A;
                 }
               }
+
             }
           }
         }
@@ -297,30 +386,45 @@ body {
 
   /////////////////////// Certificates Components //////////
 
-  .certificates_main{
-    .cer_con{
-      .cer_row{
-        .cer_col12{
-          h1{
+  .certificates_main {
+    padding-top: 50px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-image: url("../images/sertifikat-bg.png");
+    padding-bottom: 50px;
+
+    .cer_con {
+      .cer_row {
+        .cer_col12 {
+          h1 {
             font-family: SF Pro Display;
             font-style: normal;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
             letter-spacing: -0.02em;
-            color: #000000;
+            color: #fff;
             text-align: center;
+            text-shadow: 1px 1px 1px black;
           }
         }
-        .cer_col4{
+
+        .cer_col4 {
           margin-top: 30px;
-          .cer_card{
+
+
+          .cer_card {
             background: #FFFFFF;
             box-shadow: 0px 2px 2px rgba(188, 188, 188, 0.25);
-            border-radius: 10px;
+            border-radius: 22px;
+            border: none;
 
-            .card-header{
-              h1{
+            .card-header1 {
+              h1 {
                 font-family: SF Pro Display;
                 font-style: normal;
                 font-weight: 600;
@@ -329,10 +433,13 @@ body {
                 letter-spacing: -0.02em;
                 color: #000000;
                 text-align: center;
+                margin-top: 10px;
+
               }
             }
-            .card-body{
-              p{
+
+            .card-body {
+              p {
                 font-family: SF Pro Display;
                 font-style: normal;
                 font-weight: normal;
@@ -342,6 +449,18 @@ body {
               }
             }
           }
+
+          .one {
+            background-image: url("../images/sertificat-one.png");
+          }
+
+          .two {
+            background-image: url("../images/sertificat-two.png");
+          }
+
+          .three {
+            background-image: url("../images/sertificat-three.png");
+          }
         }
       }
     }
@@ -349,52 +468,73 @@ body {
 
   ////////////////////// NEWS Components ///////////////////
 
-  .news_main{
-    .news_con{
-      .news_row{
-        .news_col12{
-          h1{
+  .news_main {
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-image: url("../images/new-bg.png");
+
+
+    .news_con {
+      .news_row {
+        .news_col12 {
+          h1 {
             font-family: SF Pro Display;
             font-style: normal;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
             letter-spacing: -0.02em;
-            color: #000000;
+            color: #fff;
             text-align: center;
             margin-top: 50px;
             margin-bottom: 50px;
+            text-shadow: 1px 1px 1px black;
           }
         }
-        .news_col4{
+
+        .news_col4 {
           margin-bottom: 20px;
-          .news_card{
-            .card-header{
+
+          .news_card {
+            background-color: transparent;
+            border: 0;
+
+            .card-header {
               display: flex;
               align-items: center;
               justify-content: center;
-              img{
-                width: 50%;
+              padding: 0;
+
+              img {
+                width: 100%;
               }
             }
-            .card-body{
-              h1{
+
+            .card-body {
+
+              h1 {
                 font-family: SF Pro Display;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 26px;
                 line-height: 34px;
                 letter-spacing: -0.02em;
-                color: #000000;
+                color: #fff;
               }
-              h4{
+
+              h4 {
                 font-family: SF Pro Display;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 18px;
                 line-height: 35px;
-                color: #000000;
-                &:hover{
+                color: #fff;
+
+                &:hover {
                   color: #3942d7;
                   cursor: pointer;
                 }
@@ -402,8 +542,9 @@ body {
             }
           }
         }
-        .news_more_col2{
-          button{
+
+        .news_more_col2 {
+          button {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -414,11 +555,14 @@ body {
             color: #FFFFFF;
             font-weight: 600;
             padding: 10px 30px;
-            span{
+            margin-bottom: 50px;
+
+            span {
               margin-left: 5px;
             }
-            &:hover{
-              span{
+
+            &:hover {
+              span {
                 margin-left: 10px;
                 transition: all 0.2s linear;
               }
@@ -426,6 +570,704 @@ body {
           }
         }
       }
+    }
+  }
+
+  ///////////////////// CONTACK Component //////////////////
+
+  .contak_main {
+    padding-top: 50px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-image: url("../images/contact-bg.png");
+
+    padding-bottom: 50px;
+
+    .contak_con {
+      .contak_row {
+
+        .con_aloqa_12 {
+          text-align: center;
+          margin-bottom: 50px;
+
+          h1 {
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.02em;
+            color: #fff;
+            text-shadow: 1px 1px 1px black;
+          }
+        }
+
+        .contak_left_col6 {
+          @media (max-width: 992px) {
+            margin-bottom: 50px;
+          }
+
+          .contak_card {
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+            background: #f4f4f4;
+            border-radius: 1rem;
+            text-align: center;
+
+
+            &:hover {
+              transition: box-shadow .2s ease;
+            }
+
+            .card-body {
+              margin-bottom: 70px;
+
+              h1 {
+                font-weight: 400;
+                font-size: 20px;
+                padding-bottom: 10px;
+                @media (max-width: 400px) {
+                  font-size: 16px;
+                }
+              }
+
+              h2 {
+                font-weight: 400;
+                color: #f58220;
+                font-size: 25px;
+                margin-bottom: 20px;
+                @media (max-width: 400px) {
+                  font-size: 20px;
+                }
+
+                span {
+                  font-size: 30px;
+                  font-weight: 700;
+                  color: #5c5858;
+                  margin-left: 10px;
+                  @media (max-width: 400px) {
+                    font-size: 25px;
+                  }
+
+                  &:hover {
+                    cursor: pointer;
+                  }
+                }
+              }
+
+              h3 {
+                font-weight: 400;
+                font-size: 20px;
+                @media (max-width: 400px) {
+                  font-size: 16px;
+                }
+              }
+
+              h5 {
+                a {
+                  font-weight: 400;
+                  font-size: 20px;
+                  padding-bottom: 10px;
+                  color: black;
+                  text-decoration: none;
+                  @media (max-width: 400px) {
+                    font-size: 16px;
+                  }
+                }
+
+                margin-bottom: 40px;
+              }
+
+              h4 {
+                font-weight: 400;
+                font-size: 20px;
+                margin-bottom: 30px;
+                @media (max-width: 400px) {
+                  font-size: 16px;
+                }
+              }
+
+              .line {
+                height: 1px;
+                width: 100%;
+                background-color: #CED4DA;
+                margin-bottom: 20px;
+                margin-top: 20px;
+              }
+
+              .lavozim {
+                h6 {
+                  font-weight: 400;
+                  font-size: 20px;
+                  @media (max-width: 400px) {
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .contak_right_col6 {
+
+          .card {
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+            background: #f4f4f4;
+            border-radius: 1rem;
+            padding: 25px;
+
+
+            h1 {
+              font-weight: 500;
+              color: #5c5858;
+              font-size: 25px;
+              margin-bottom: 30px;
+            }
+
+            input {
+              margin-bottom: 25px;
+            }
+
+            button {
+              background-color: #00D74A;
+              width: 50%;
+              margin-top: 30px;
+              color: #FFFFFF;
+              font-weight: 600;
+              margin-bottom: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //////////////////// FOOTER Component ///////////////////
+
+  .footer_main {
+    padding-top: 50px;
+    background-color: #0E2051;
+
+
+    .footer_con {
+
+      .footer_row {
+        .footer_col4_1 {
+          img {
+            width: 80%;
+            margin-bottom: 10px;
+          }
+
+          p {
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+            margin-top: 15px;
+            opacity: 0.8;
+            text-shadow: 1px 1px 1px black;
+          }
+        }
+
+        .footer_col3_2 {
+          margin-bottom: 30px;
+
+          h1 {
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            color: #fff;
+            text-shadow: 1px 1px 1px black;
+          }
+
+          ul {
+            li {
+              a {
+                font-family: SF Pro Display;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: #fff;
+                opacity: 0.8;
+                text-shadow: 1px 1px 1px black;
+
+                &:hover {
+                  color: #00D74A;
+                }
+
+                span {
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+        }
+
+        .footer_kontak {
+          h1 {
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            color: #fff;
+            text-shadow: 1px 1px 1px black;
+
+
+          }
+
+          ul {
+            li {
+              a {
+                font-family: SF Pro Display;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: #fff;
+                opacity: 0.8;
+                text-shadow: 1px 1px 1px black;
+
+                &:hover {
+                  color: #00D74A;
+                }
+
+                span {
+                  margin-right: 5px;
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /////////////////// NEWS PAGES //////////////////////////
+
+  .news_pages_main {
+    .news_pages_bg {
+      width: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      background-image: url("../images/new-bg.png");
+
+      .news_pages_con {
+        .news_pages_row {
+          padding-bottom: 50px;
+
+          .news_pages_col6 {
+            .card {
+              .card-body {
+                h2 {
+                  font-family: Istok Web;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 36px;
+                  line-height: 52px;
+                  color: #FFFFFF;
+                }
+
+                p {
+                  font-family: Istok Web;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 22px;
+                  line-height: 35px;
+                  color: #FFFFFF;
+                }
+              }
+            }
+          }
+
+          .news_pages_col6_right {
+            .news {
+              .image {
+                img {
+                  width: 200px;
+                }
+              }
+
+              .title {
+                margin-left: 20px;
+                margin-bottom: 15px;
+
+                h2 {
+                  font-family: Istok Web;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 30px;
+                  line-height: 52px;
+                  color: #FFFFFF;
+                }
+
+                p {
+                  font-family: Istok Web;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 16px;
+                  line-height: 22px;
+                  color: #FFFFFF;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .contact_sent_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+    z-index: 9999;
+    top: 100px;
+    left: 0;
+    right: 0;
+
+    .card {
+      width: 500px;
+      box-shadow: 0 .5rem 1rem #FFFFFF;
+      background: #0E2051;
+      border-radius: 1rem;
+      padding: 25px;
+
+
+      h1 {
+        font-weight: 500;
+        color: #fff;
+        font-size: 25px;
+        margin-bottom: 30px;
+      }
+
+      input {
+        margin-bottom: 25px;
+      }
+
+      button {
+        background-color: #00D74A;
+        width: 50%;
+        margin-top: 30px;
+        color: #FFFFFF;
+        font-weight: 600;
+        margin-bottom: 45px;
+      }
+    }
+  }
+
+  //////////////////////// PROGRAMS Pages Component ////////////////
+
+  .programs_pages_main {
+    .programs_pages_bg {
+      background-image: url("../images/contact-bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      .programs_pages_con {
+        .programs_pages_row{
+          .tab{
+            margin-top: 50px;
+            .nav-tabs{
+              justify-content: center;
+              border: none;
+              .nav-item{
+                .nav-link{
+                  background-color: transparent;
+                  border: none;
+                  margin-left: 70px;
+                  margin-right: 70px;
+                  color: white;
+                  font-size: 25px;
+                  padding: 15px 40px;
+                  display: block;
+                  position: relative;
+                  &::after{
+                    content: '';
+                    width: 0;
+                    height: 2px;
+                    background-color: #FFFFFF;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    transition: all 0.5s linear;
+                  }
+                  &:hover::after{
+                    width: 100%;
+                  }
+                  &::before{
+                    content: '';
+                    width: 0;
+                    height: 2px;
+                    background-color: #FFFFFF;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    transition: all 0.5s linear;
+                  }
+                  &:hover::before{
+                    width: 100%;
+                  }
+                  .box::after{
+                    content: '';
+                    width: 3px;
+                    height: 0;
+                    background-color: #FFFFFF;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    transition: all 0.5s linear;
+                  }
+                  .box:hover::after{
+                    height: 100%;
+                  }
+                  .box::before{
+                    content: '';
+                    width: 3px;
+                    height: 0;
+                    background-color: #FFFFFF;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    transition: all 0.5s linear;
+                  }
+                  .box:hover::before{
+                    height: 100%;
+                  }
+                }
+
+              }
+            }
+
+            .tab-content{
+              .tab-pane{
+                .row{
+                  h3{
+                    color: #FFFFFF;
+                    margin-bottom: 10px;
+                  }
+                  h6{
+                    color: #FFFFFF;
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /////////////////////// PARTNERS Pages Component //////////////////
+
+  .partners_pages_main{
+    .partners_pages_con{
+      .partners_pages_row{
+        .partners_pages_col3{
+          .cer_card {
+            background: #FFFFFF;
+            box-shadow: 0px 2px 2px rgba(188, 188, 188, 0.25);
+            border-radius: 22px;
+            border: none;
+
+            .card-header1 {
+              h1 {
+                font-family: SF Pro Display;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 26px;
+                line-height: 34px;
+                letter-spacing: -0.02em;
+                color: #000000;
+                text-align: center;
+                margin-top: 10px;
+
+              }
+            }
+
+            .card-body {
+              p {
+                font-family: SF Pro Display;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 40px;
+                color: #000000;
+              }
+            }
+          }
+
+          .one {
+            background-image: url("../images/sertificat-one.png");
+          }
+
+          .two {
+            background-image: url("../images/sertificat-two.png");
+          }
+
+          .three {
+            background-image: url("../images/sertificat-three.png");
+          }
+        }
+      }
+    }
+  }
+
+  /////////////////// ADMIN PASSWORD Pages Component ///////////////
+
+  .admin_password_main {
+
+    .admin_password_con {
+      .admin_password_row {
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+
+        .admin_col4 {
+          .admin_card {
+            padding: 30px 25px;
+            text-align: center;
+
+            form {
+              h1 {
+                font-weight: 600;
+                margin-bottom: 10px;
+                font-size: 30px;
+              }
+
+              p {
+                font-weight: 500;
+                margin-bottom: 50px;
+                font-size: 20px;
+              }
+
+              input {
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  ////////////////// ADMIN Pages Pages Component ///////////////////
+
+  .admin_layout {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    .admin_layout_left {
+      width: 250px;
+      height: 100%;
+      overflow-y: auto;
+      background-color: #FFFFFF;
+      padding: 30px 0;
+
+      .user_info {
+        padding: 10px 15px;
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #f2f4f8;
+        }
+
+        h5 {
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+      .nav{
+        padding-top: 40px;
+        .nav-item{
+          .nav-link{
+            padding-left: 25px;
+            color: #888;
+            position: relative;
+            &:after{
+              content: '';
+              position: absolute;
+              left: 5px;
+              top: 0;
+              bottom: 0;
+              height: 0;
+              margin: auto;
+              width: 2px;
+              background-color: red;
+              transition: all 0.3s linear;
+            }
+            &:hover, &.active{
+              color: #000;
+              &:after{
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .admin-layout-right{
+      width: calc(100% - 250px);
+      height: 100%;
+      overflow-y: auto;
+      background-color: #f2f4f8;
+      padding: 30px;
+    }
+  }
+}
+////////////////// HomePages Pages  ///////////////////
+
+.modal{
+  .modal_s{
+    box-sizing: border-box;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 40% 91%;
+    background-repeat: no-repeat;
+
+    background-image: url("../images/images (2).jpeg");
+
+
+    .modal-header{
+        span{
+          color: #FFFFFF;
+        }
+    }
+    .modal-body{
+      form{
+        ::placeholder{
+          color: #FFFFFF;
+          opacity: 1;
+        }
+      }
+
     }
   }
 }
