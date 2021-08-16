@@ -18,6 +18,8 @@ import { userme } from "./redux/action/authAction";
 import { config } from "./utils/config";
 import ContakPages from "./pages/ContakPages";
 import ContackStudent from "./pages/ContackStudent";
+import NewsPagesUrl from "./pages/NewsPagesUrl";
+import ContackPartnersPages from "./pages/ContackPartnersPages";
 
 function App() {
     const dispatch = useDispatch();
@@ -49,11 +51,13 @@ function App() {
             <Route path="/" exact component={HomePages} />
             <Route path="/login" exact component={AdminPassword} />
             <Route path="/news" exact component={NewsPages} />
+            <Route path="/news/:url" exact component={NewsPagesUrl} />
+
             <Route path="/programs" exact component={ProgramsPages} />
-            <Route path="/partners" exact component={PartnersPages} />
+            <Route path="/partner" exact component={PartnersPages} />
             <Route path="/contak" exact component={ContakPages} />
-            <Route path="/contak/student" exact component={ContackStudent} />
-            <Route path="/contak/partners" exact component={ContackStudent} />
+            <Route path="/student" exact component={ContackStudent} />
+            <Route path="/partners" exact component={ContackPartnersPages} />
 
 
 

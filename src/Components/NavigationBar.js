@@ -68,7 +68,7 @@ const NavigationBar = (props) => {
                 </Link>
               </NavItem>
               <NavItem className="navitem_main">
-                <Link to="/partners" className="navlink_main">
+                <Link to="/partner" className="navlink_main">
                   {getText("hamkorlar")}
                 </Link>
               </NavItem>

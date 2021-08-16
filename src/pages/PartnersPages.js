@@ -19,7 +19,7 @@ const PartnersPages = () => {
                         <h1 className="my-4 text-center">Universitetlar bilan Shartnoma</h1>
                     </div>
 
-                    <div className="col-4 partners_pages_col3">
+                    <div className="col-12 col-md-6 col-lg-4 partners_pages_col3">
                         <div className="card cer_card one">
                             <div className="card-header1">
                                 <h1>Guvohnoma</h1>
@@ -31,7 +31,7 @@ const PartnersPages = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-4 partners_pages_col3">
+                    <div className="col-12 col-md-6 col-lg-4 partners_pages_col3">
                         <div className="card cer_card two">
                             <div className="card-header1">
                                 <h1>Guvohnoma</h1>
@@ -43,7 +43,7 @@ const PartnersPages = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-4 partners_pages_col3">
+                    <div className="col-12 col-md-6 col-lg-4 partners_pages_col3">
                         <div className="card cer_card three">
                             <div className="card-header1">
                                 <h1>Guvohnoma</h1>

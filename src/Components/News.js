@@ -2,6 +2,10 @@ import React, {useEffect} from 'react';
 import {AiOutlineArrowRight} from 'react-icons/ai';
 import {useDispatch, useSelector} from "react-redux";
 import {getAllNews} from "../redux/action/newsAction";
+import {connect} from "react-redux";
+import {GET_ONE_SITES} from "../redux/type/newsType";
+import {Link} from "react-router-dom"
+
 
 const News = (props) => {
 
@@ -15,6 +19,10 @@ const News = (props) => {
 
     const openNews = (p) => {
         window.location.href = "/news"
+    };
+
+    const openMaess = (i) => {
+        dispatch({type: GET_ONE_SITES, payload: i});
     };
 
     return (
@@ -34,7 +42,8 @@ const News = (props) => {
                                         </div>
                                         <div className="card-body ">
                                             <h2>{i.titleUz}</h2>
-                                            <p>{i.descriptionUz.length > 100 ? i.descriptionUz.substring(0, 100) + " ..." : ""}</p>
+                                            <Link className="link" to={"/news/" + i.id} onClick={openMaess}>{i.descriptionUz.length > 100 ? i.descriptionUz.substring(0, 100) + " ..." : ""}</Link>
+
                                         </div>
                                     </div>
                                 </div> : ""
@@ -51,4 +60,11 @@ const News = (props) => {
     );
 };
 
-export default News;
+const mapStateToProps = (stete) => {
+   return{
+       news: stete.news.hook
+   }
+};
+
+
+export default News ;
